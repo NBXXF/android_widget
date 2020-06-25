@@ -4,6 +4,7 @@
 3. 市面上大部分圆角组件都是用canvase重绘制,会破坏原有的selector drawable特性
 # 增加自定义属性
 1. app:radius="8dp"
+2. app:radius="360dp" 为圆形
 
 # 控件支持
 1.TextView

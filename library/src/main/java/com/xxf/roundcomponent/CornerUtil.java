@@ -1,5 +1,6 @@
 package com.xxf.roundcomponent;
 
+import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Outline;
 import android.util.AttributeSet;
@@ -38,11 +39,19 @@ public class CornerUtil {
         if (view != null && attrs != null) {
             TypedArray radiusTr = view.getContext().obtainStyledAttributes(attrs, R.styleable.xxf_radius_style);
             int radius = radiusTr.getDimensionPixelSize(R.styleable.xxf_radius_style_radius, 0);
-            if (radius >= 360) {
+            int dp360 = dip2px(view.getContext(), 360);
+            if (radius >= dp360) {
+//                Toast.makeText(view.getContext(), "yyyy", Toast.LENGTH_SHORT).show();
                 clipViewCircle(view);
             } else {
                 clipViewCorner(view, radius);
             }
         }
     }
+
+    private static int dip2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
+
 }
