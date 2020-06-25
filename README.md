@@ -16,3 +16,7 @@
 8.LinearLayout
 9.ReleativeLayout
 10.FrameLayout
+
+# 依赖
+1.    implementation 'androidx.appcompat:appcompat:1.1.0'
+2. 	  implementation 'com.github.NBXXF:round_components:x.x.x'
