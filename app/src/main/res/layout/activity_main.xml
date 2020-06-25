@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <com.xxf.roundcomponent.XXFTextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="textView"
+        android:textColor="@color/test"
+        app:radius="360dp" />
+
+    <com.xxf.roundcomponent.XXFTextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:padding="10dp"
+        android:text="textView"
+        android:textColor="@color/test"
+        app:radius="4dp" />
+
+    <com.xxf.roundcomponent.XXFCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff00ff"
+        android:padding="10dp"
+        android:text="CompatTextView"
+        android:textColor="@color/test"
+        app:radius="8dp" />
+
+    <com.xxf.roundcomponent.XXFButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/test"
+        android:padding="10dp"
+        android:text="button"
+        android:textColor="@color/test"
+        app:radius="8dp" />
+
+    <com.xxf.roundcomponent.XXFCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#0000ff"
+        android:padding="10dp"
+        android:text="compatButton"
+        android:textColor="@color/test"
+        app:radius="8dp" />
+
+    <com.xxf.roundcomponent.XXFEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00ffff"
+        android:hint="EditText"
+        android:padding="10dp"
+        app:radius="8dp" />
+
+    <com.xxf.roundcomponent.XXFCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00ffff"
+        android:hint="CompatEditText"
+        android:padding="10dp"
+        app:radius="8dp" />
+
+    <com.xxf.roundcomponent.XXFImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mm"
+        app:radius="8dp" />
+
+
+    <com.xxf.roundcomponent.XXFCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mm"
+        app:radius="8dp" />
+
+    <com.xxf.roundcomponent.XXFFrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#f0ff0f"
+        android:padding="10dp"
+        app:radius="8dp" />
+
+</LinearLayout>
