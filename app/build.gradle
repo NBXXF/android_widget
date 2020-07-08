@@ -26,6 +26,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation project(path: ':compat')
+    implementation project(path: ':skin')
     //implementation 'com.github.NBXXF:round_components:1.0.0'
 
 }
