@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import androidx.appcompat.widget.AppCompatTextView;
 
 /**
- * @Description: java类作用描述
+ * @Description: eg app:radius="4dp"
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:34
  */

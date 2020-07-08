@@ -1,3 +1,4 @@
-include ':library'
+include ':skin'
+include ':compat'
 include ':app'
 rootProject.name = "xxf_button"

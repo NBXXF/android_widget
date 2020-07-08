@@ -41,7 +41,6 @@ public class CornerUtil {
             int radius = radiusTr.getDimensionPixelSize(R.styleable.xxf_radius_style_radius, 0);
             int dp360 = dip2px(view.getContext(), 360);
             if (radius >= dp360) {
-//                Toast.makeText(view.getContext(), "yyyy", Toast.LENGTH_SHORT).show();
                 clipViewCircle(view);
             } else {
                 clipViewCorner(view, radius);

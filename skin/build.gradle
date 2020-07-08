@@ -1,17 +1,14 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-
+    resourcePrefix 'xxf';
     defaultConfig {
-        applicationId "com.xxf.button"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -24,8 +21,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation project(path: ':compat')
-    //implementation 'com.github.NBXXF:round_components:1.0.0'
-
+    compileOnly 'androidx.appcompat:appcompat:1.1.0'
+    compileOnly 'skin.support:skin-support:4.0.5'                   // skin-support
+    compileOnly 'skin.support:skin-support-appcompat:4.0.5'         // skin-support 基础控件支持
 }

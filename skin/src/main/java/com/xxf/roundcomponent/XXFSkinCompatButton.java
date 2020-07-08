@@ -5,23 +5,25 @@ import android.util.AttributeSet;
 
 import androidx.appcompat.widget.AppCompatButton;
 
+import skin.support.widget.SkinCompatButton;
+
 /**
- * @Description: java类作用描述
+ * @Description: eg app:radius="4dp"
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:32
  */
-public class XXFCompatButton extends AppCompatButton {
+public class XXFSkinCompatButton extends SkinCompatButton {
 
-    public XXFCompatButton(Context context) {
+    public XXFSkinCompatButton(Context context) {
         super(context);
     }
 
-    public XXFCompatButton(Context context, AttributeSet attrs) {
+    public XXFSkinCompatButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         CornerUtil.clipViewCorner(this, attrs);
     }
 
-    public XXFCompatButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public XXFSkinCompatButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         CornerUtil.clipViewCorner(this, attrs);
     }

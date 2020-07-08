@@ -7,17 +7,30 @@
 2. app:radius="360dp" 为圆形
 
 # 控件支持
-1.TextView
-2.CheckedTextView
-3.AppCompatTextView
-4.button
-5.AppCompatButton
-6.ImageView
-7.AppComponentImageView
-8.LinearLayout
-9.ReleativeLayout
-10.FrameLayout
+1. XXFCompatButton
+2. XXFCompatCheckedTextView
+3. XXFCompatEditText
+4. XXFCompatImageView
+5. XXFCompatTextView
+6. XXFFrameLayout
+7. XXFLinearLayout
+8. XXFRelativeLayout
+
+XXFSkinCompatButton
+XXFSkinCompatCheckedTextView
+XXFSkinCompatEditText
+XXFSkinCompatImageView
+XXFSkinCompatTextView
+XXFSkinFrameLayout
+XXFSkinLinearLayout
+XXFSkinRelativeLayout
+
 
 # 依赖
 1.    implementation 'androidx.appcompat:appcompat:1.1.0'
 2. 	  implementation 'com.github.NBXXF:round_components:x.x.x'
+
+# 如果想使用skin 换肤
+1.    implementation 'androidx.appcompat:appcompat:1.1.0'
+2.    implementation'skin.support:skin-support:4.0.5'                   // skin-support
+3.    implementation 'skin.support:skin-support-appcompat:4.0.5'         // skin-support 基础控件支持
