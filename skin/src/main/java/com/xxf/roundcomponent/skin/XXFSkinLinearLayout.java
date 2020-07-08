@@ -1,10 +1,12 @@
-package com.xxf.roundcomponent;
+package com.xxf.roundcomponent.skin;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
+
+import com.xxf.roundcomponent.CornerUtil;
 
 import skin.support.widget.SkinCompatLinearLayout;
 

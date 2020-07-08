@@ -1,8 +1,10 @@
-package com.xxf.roundcomponent;
+package com.xxf.roundcomponent.skin;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
+
+import com.xxf.roundcomponent.CornerUtil;
 
 import skin.support.widget.SkinCompatRelativeLayout;
 
