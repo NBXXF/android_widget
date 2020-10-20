@@ -12,23 +12,28 @@ import androidx.annotation.Nullable;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:41
  */
-public class XXFFrameLayout extends FrameLayout {
+public class XXFFrameLayout extends FrameLayout implements XXFRoundWidget {
     public XXFFrameLayout(@NonNull Context context) {
         super(context);
     }
 
     public XXFFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
+    }
+
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
     }
 }

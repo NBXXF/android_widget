@@ -4,10 +4,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Outline;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewOutlineProvider;
-import android.widget.Toast;
 
 /**
  * @Description: view裁切工具类
@@ -25,17 +23,17 @@ public class CornerUtil {
         });
     }
 
-    public static void clipViewCorner(View view, final int pixel) {
+    public static void clipViewRoundRect(View view, final int radius) {
         view.setClipToOutline(true);
         view.setOutlineProvider(new ViewOutlineProvider() {
             @Override
             public void getOutline(View view, Outline outline) {
-                outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), pixel);
+                outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
             }
         });
     }
 
-    public static void clipViewCorner(View view, AttributeSet attrs) {
+    public static void clipView(View view, AttributeSet attrs) {
         if (view != null && attrs != null) {
             TypedArray radiusTr = view.getContext().obtainStyledAttributes(attrs, R.styleable.xxf_radius_style);
             int radius = radiusTr.getDimensionPixelSize(R.styleable.xxf_radius_style_radius, 0);
@@ -43,8 +41,17 @@ public class CornerUtil {
             if (radius >= dp360) {
                 clipViewCircle(view);
             } else {
-                clipViewCorner(view, radius);
+                clipViewRoundRect(view, radius);
             }
+        }
+    }
+
+    public static void clipViewRadius(View view, float radius) {
+        int dp360 = dip2px(view.getContext(), 360);
+        if (radius >= dp360) {
+            clipViewCircle(view);
+        } else {
+            clipViewRoundRect(view, (int) radius);
         }
     }
 

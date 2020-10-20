@@ -10,18 +10,22 @@ import androidx.appcompat.widget.AppCompatCheckedTextView;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:49
  */
-public class XXFCompatCheckedTextView extends AppCompatCheckedTextView {
+public class XXFCompatCheckedTextView extends AppCompatCheckedTextView implements XXFRoundWidget {
     public XXFCompatCheckedTextView(Context context) {
         super(context);
     }
 
     public XXFCompatCheckedTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFCompatCheckedTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
+    }
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
     }
 }

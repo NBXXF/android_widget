@@ -11,23 +11,27 @@ import androidx.annotation.Nullable;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:39
  */
-public class XXFLinearLayout extends LinearLayout {
+public class XXFLinearLayout extends LinearLayout implements XXFRoundWidget {
     public XXFLinearLayout(Context context) {
         super(context);
     }
 
     public XXFLinearLayout(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFLinearLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
+    }
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
     }
 }

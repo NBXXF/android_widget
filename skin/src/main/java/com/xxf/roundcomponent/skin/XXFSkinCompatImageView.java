@@ -3,9 +3,8 @@ package com.xxf.roundcomponent.skin;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import androidx.appcompat.widget.AppCompatImageView;
-
 import com.xxf.roundcomponent.CornerUtil;
+import com.xxf.roundcomponent.XXFRoundWidget;
 
 import skin.support.widget.SkinCompatImageView;
 
@@ -14,18 +13,23 @@ import skin.support.widget.SkinCompatImageView;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:47
  */
-public class XXFSkinCompatImageView extends SkinCompatImageView {
+public class XXFSkinCompatImageView extends SkinCompatImageView implements XXFRoundWidget {
     public XXFSkinCompatImageView(Context context) {
         super(context);
     }
 
     public XXFSkinCompatImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFSkinCompatImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
+    }
+
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
     }
 }

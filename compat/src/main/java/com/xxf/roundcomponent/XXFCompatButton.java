@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatButton;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:32
  */
-public class XXFCompatButton extends AppCompatButton {
+public class XXFCompatButton extends AppCompatButton implements XXFRoundWidget {
 
     public XXFCompatButton(Context context) {
         super(context);
@@ -18,12 +18,15 @@ public class XXFCompatButton extends AppCompatButton {
 
     public XXFCompatButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFCompatButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
-
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
+    }
 }

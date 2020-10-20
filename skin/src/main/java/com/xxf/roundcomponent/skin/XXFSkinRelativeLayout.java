@@ -2,9 +2,9 @@ package com.xxf.roundcomponent.skin;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
 
 import com.xxf.roundcomponent.CornerUtil;
+import com.xxf.roundcomponent.XXFRoundWidget;
 
 import skin.support.widget.SkinCompatRelativeLayout;
 
@@ -13,19 +13,23 @@ import skin.support.widget.SkinCompatRelativeLayout;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:43
  */
-public class XXFSkinRelativeLayout extends SkinCompatRelativeLayout {
+public class XXFSkinRelativeLayout extends SkinCompatRelativeLayout implements XXFRoundWidget {
     public XXFSkinRelativeLayout(Context context) {
         super(context);
     }
 
     public XXFSkinRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFSkinRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
+    }
 }

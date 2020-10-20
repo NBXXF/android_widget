@@ -9,23 +9,28 @@ import android.widget.RelativeLayout;
  * @Author: XGod
  * @CreateDate: 2020/6/25 15:43
  */
-public class XXFRelativeLayout extends RelativeLayout {
+public class XXFRelativeLayout extends RelativeLayout implements XXFRoundWidget {
     public XXFRelativeLayout(Context context) {
         super(context);
     }
 
     public XXFRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
     }
 
     public XXFRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        CornerUtil.clipViewCorner(this, attrs);
+        CornerUtil.clipView(this, attrs);
+    }
+
+    @Override
+    public void setRadius(float radius) {
+        CornerUtil.clipViewRadius(this, radius);
     }
 }
