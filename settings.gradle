@@ -1,3 +1,4 @@
+include ':gradient'
 include ':skin'
 include ':compat'
 include ':app'

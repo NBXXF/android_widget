@@ -42,7 +42,6 @@
         app:radius="8dp" />
 
 
-
     <com.xxf.roundcomponent.XXFCompatImageView
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -58,5 +57,28 @@
         android:background="#f0ff0f"
         android:padding="10dp"
         app:radius="8dp" />
+
+    <com.xxf.gradient.XXFGradientFrameLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:center_color="@android:color/black"
+        app:end_color="@android:color/holo_red_dark"
+        app:orientation="TOP_BOTTOM"
+        app:radius="4dp"
+        app:radius_bottom_left="100"
+        app:radius_bottom_right="100"
+        app:radius_top_left="100"
+        app:radius_top_right="100"
+        app:start_color="#00ff00" />
+
+    <com.xxf.gradient.XXFGradientCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textColor="@android:color/white"
+        app:end_color="@android:color/holo_blue_bright"
+        app:orientation="TOP_BOTTOM"
+        app:radius="4dp"
+        app:start_color="#00ff00" />
 
 </LinearLayout>
