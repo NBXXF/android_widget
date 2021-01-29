@@ -5,6 +5,8 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.xxf.roundcomponent.CornerUtil;
+
 /**
  * @Author: XGod  xuanyouwu@163.com  17611639080
  * Date: 1/21/21 5:21 PM
@@ -42,8 +44,10 @@ public class GradientUtils {
                                                 final AttributeSet attrs) {
         if (hasGradientAttr(context, attrs)) {
             view.setBackground(new GradientDrawableBuilder(context, attrs).build());
+            CornerUtil.clipView(view, attrs);
             return true;
         }
+        CornerUtil.clipView(view, attrs);
         return false;
     }
 

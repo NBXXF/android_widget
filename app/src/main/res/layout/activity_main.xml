@@ -78,7 +78,7 @@
         android:textColor="@android:color/white"
         app:end_color="@android:color/holo_blue_bright"
         app:orientation="TOP_BOTTOM"
-        app:radius="4dp"
+        app:radius="18dp"
         app:start_color="#00ff00" />
 
 </LinearLayout>
