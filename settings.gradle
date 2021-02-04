@@ -1,5 +1,6 @@
-include ':gradient'
-include ':skin'
-include ':compat'
+include ':view_ration'
+include ':view_gradient'
+include ':view_round_skin'
+include ':view_round'
 include ':app'
 rootProject.name = "xxf_button"

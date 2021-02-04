@@ -1,84 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
 
-    <com.xxf.roundcomponent.XXFCompatTextView
-        android:id="@+id/btn_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#ff00ff"
-        android:padding="10dp"
-        android:text="CompatTextView"
-        android:textColor="@color/test"
-        app:radius="8dp" />
-
-
-    <com.xxf.roundcomponent.XXFCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#0000ff"
-        android:padding="10dp"
-        android:text="compatButton"
-        android:textColor="@color/test"
-        app:radius="8dp" />
-
-
-    <com.xxf.roundcomponent.XXFCompatEditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#00ffff"
-        android:hint="CompatEditText"
-        android:padding="10dp"
-        app:radius="8dp" />
-
-
-    <com.xxf.roundcomponent.XXFCompatImageView
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/mm"
-        app:radius="8dp" />
-
-    <com.xxf.roundcomponent.XXFFrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:background="#f0ff0f"
-        android:padding="10dp"
-        app:radius="8dp" />
-
-    <com.xxf.gradient.XXFGradientFrameLayout
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        app:center_color="@android:color/black"
-        app:end_color="@android:color/holo_red_dark"
-        app:orientation="TOP_BOTTOM"
-        app:radius="4dp"
-        app:radius_bottom_left="100"
-        app:radius_bottom_right="100"
-        app:radius_top_left="100"
-        app:radius_top_right="100"
-        app:start_color="#00ff00" />
-
-    <com.xxf.gradient.XXFGradientCompatButton
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="测试"
-        android:textColor="@android:color/white"
-        app:end_color="@android:color/holo_blue_bright"
-        app:orientation="TOP_BOTTOM"
-        app:radius="18dp"
-        app:start_color="#00ff00" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
 
-</LinearLayout>
+
+        <com.xxf.roundcomponent.XXFCompatTextView
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ff00ff"
+            android:padding="10dp"
+            android:text="CompatTextView"
+            android:textColor="@color/test"
+            app:radius="8dp" />
+
+
+        <com.xxf.roundcomponent.XXFCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#0000ff"
+            android:padding="10dp"
+            android:text="compatButton"
+            android:textColor="@color/test"
+            app:radius="8dp" />
+
+
+        <com.xxf.roundcomponent.XXFCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00ffff"
+            android:hint="CompatEditText"
+            android:padding="10dp"
+            app:radius="8dp" />
+
+
+        <com.xxf.roundcomponent.XXFCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mm"
+            app:radius="8dp" />
+
+        <com.xxf.roundcomponent.XXFFrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#f0ff0f"
+            android:padding="10dp"
+            app:radius="8dp" />
+
+        <com.xxf.gradient.XXFGradientFrameLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            app:center_color="@android:color/black"
+            app:end_color="@android:color/holo_red_dark"
+            app:orientation="TOP_BOTTOM"
+            app:radius="4dp"
+            app:radius_bottom_left="100"
+            app:radius_bottom_right="100"
+            app:radius_top_left="100"
+            app:radius_top_right="100"
+            app:start_color="#00ff00" />
+
+        <com.xxf.gradient.XXFGradientCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textColor="@android:color/white"
+            app:end_color="@android:color/holo_blue_bright"
+            app:orientation="TOP_BOTTOM"
+            app:radius="18dp"
+            app:start_color="#00ff00" />
+
+        <com.xxf.view.ration.XXFRatioFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            app:heightRatio="9"
+            app:widthRatio="16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="16比9" />
+        </com.xxf.view.ration.XXFRatioFrameLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

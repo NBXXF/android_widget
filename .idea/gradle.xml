@@ -12,9 +12,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/compat" />
-            <option value="$PROJECT_DIR$/gradient" />
-            <option value="$PROJECT_DIR$/skin" />
+            <option value="$PROJECT_DIR$/view_gradient" />
+            <option value="$PROJECT_DIR$/view_ration" />
+            <option value="$PROJECT_DIR$/view_round" />
+            <option value="$PROJECT_DIR$/view_round_skin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

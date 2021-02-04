@@ -25,9 +25,10 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation project(path: ':compat')
-    implementation project(path: ':gradient')
-    implementation project(path: ':skin')
+    implementation project(path: ':view_round')
+    implementation project(path: ':view_gradient')
+    implementation project(path: ':view_round_skin')
+    implementation project(path: ':view_ration')
     //implementation 'com.github.NBXXF:round_components:1.0.0'
 
 }

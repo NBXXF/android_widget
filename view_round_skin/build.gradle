@@ -19,7 +19,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation project(path: ':compat')
+    implementation project(path: ':view_round')
     compileOnly 'androidx.appcompat:appcompat:1.1.0'
     compileOnly 'skin.support:skin-support:4.0.5'                   // skin-support
     compileOnly 'skin.support:skin-support-appcompat:4.0.5'         // skin-support 基础控件支持
