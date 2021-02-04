@@ -44,10 +44,8 @@ public class GradientUtils {
                                                 final AttributeSet attrs) {
         if (hasGradientAttr(context, attrs)) {
             view.setBackground(new GradientDrawableBuilder(context, attrs).build());
-            CornerUtil.clipView(view, attrs);
             return true;
         }
-        CornerUtil.clipView(view, attrs);
         return false;
     }
 

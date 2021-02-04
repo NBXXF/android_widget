@@ -28,6 +28,5 @@ public class XXFCompatTextView extends AppCompatTextView implements XXFRoundWidg
     @Override
     public void setRadius(float radius) {
         CornerUtil.clipViewRadius(this, radius);
-        Log.d("==========>yes","r:"+radius);
     }
 }
